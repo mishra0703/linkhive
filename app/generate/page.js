@@ -1,11 +1,11 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState , Suspense } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useSearchParams, useRouter } from "next/navigation";
 
-const Generate = () => {
+function GenerateForm() {
   const searchParams = useSearchParams();
   const [links, setLinks] = useState([{ link: "", linktext: "" }]);
   const [social, setSocial] = useState([
@@ -267,5 +267,17 @@ const Generate = () => {
     </div>
   );
 };
+
+
+
+const Generate = () => {
+  return (
+    <Suspense fallback={<div className="bg-pink-300 w-full min-h-screen flex items-center justify-center">Loading...</div>}>
+      <GenerateForm />
+    </Suspense>
+  );
+};
+
+
 
 export default Generate;
