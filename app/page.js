@@ -121,7 +121,10 @@ const Page = () => {
             bio landing page designed to convert.
           </div>
           <div className="w-full my-5 flex gap-8 items-center">
-            <button onClick={createHive} className="font-poppins text-white font-bold px-8 py-5 bg-[#316a] rounded-full cursor-pointer">
+            <button
+              onClick={createHive}
+              className="font-poppins text-white font-bold px-8 py-5 bg-[#316a] rounded-full cursor-pointer"
+            >
               Get started for free
             </button>
           </div>
@@ -145,7 +148,10 @@ const Page = () => {
             traffic online.
           </div>
           <div className="w-full my-5 flex gap-8 items-center">
-            <button onClick={createHive} className="font-poppins text-white font-bold px-8 py-5 bg-[#007862] rounded-full cursor-pointer">
+            <button
+              onClick={createHive}
+              className="font-poppins text-white font-bold px-8 py-5 bg-[#007862] rounded-full cursor-pointer"
+            >
               Get started for free
             </button>
           </div>
@@ -164,12 +170,15 @@ const Page = () => {
             Analyze your audience and keep your followers engaged
           </div>
           <div className="para my-5 font-poppins text-lg font-medium">
-            Track your engagement over time, monitor revenue and learn what's
-            converting your audience. Make informed updates on the fly to keep
-            them coming back.
+            Track your engagement over time, monitor revenue and learn
+            what&apos;s converting your audience. Make informed updates on the
+            fly to keep them coming back.
           </div>
           <div className="w-full my-5 flex gap-8 items-center">
-            <button onClick={createHive} className="font-poppins text-white font-bold px-8 py-5 bg-[#70774e] rounded-full cursor-pointer">
+            <button
+              onClick={createHive}
+              className="font-poppins text-white font-bold px-8 py-5 bg-[#70774e] rounded-full cursor-pointer"
+            >
               Get started for free
             </button>
           </div>
@@ -241,6 +250,7 @@ const Page = () => {
         </div>
         <img
           src="/person-svg.svg"
+          alt="Decorative person illustration"
           className="absolute top-10 left-0 w-1/4 transform rotate-[16deg] z-1"
         />
         <div className="footer-box w-[90%] bg-white rounded-3xl p-10 relative z-5 mt-30 mb-10 shadow-lg">
@@ -258,7 +268,7 @@ const Page = () => {
                   Marketplace
                 </a>
                 <a href="#" className="hover:text-purple-600">
-                  What's New
+                  What&apos;s New
                 </a>
                 <a href="#" className="hover:text-purple-600">
                   About
@@ -355,7 +365,10 @@ const Page = () => {
             <button className="px-6 py-3 bg-gray-100 rounded-xl font-poppins">
               Log in
             </button>
-            <button onClick={createHive} className="px-6 py-3 bg-[#d2e823] rounded-full font-medium font-poppins">
+            <button
+              onClick={createHive}
+              className="px-6 py-3 bg-[#d2e823] rounded-full font-medium font-poppins"
+            >
               Get started for free
             </button>
           </div>
@@ -388,6 +401,7 @@ const Page = () => {
         </div>
         <img
           src="/flower-svg.svg"
+          alt="Decorative flower illustration"
           className="absolute bottom-15 right-15 w-1/5 transform rotate-[20deg] z-1"
         />
       </section>

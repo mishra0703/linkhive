@@ -178,9 +178,8 @@ function GenerateForm() {
           Add
         </button>
         <div className="font-poppins text-xl font-medium">
-          Step 6 (Optional) : Add your social network's links
+          Step 6 (Optional) : Add your social network&apos;s links
         </div>
-        {/* Take social network's links as input  */}
         <div className="w-full my-5 flex flex-col gap-5">
           <div className="flex gap-5 items-center">
             <input
