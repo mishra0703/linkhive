@@ -98,7 +98,7 @@ function GenerateForm() {
           <input
             type="text"
             value={handle || ""}
-            onChange={(e) => sethandle(e.target.value)}
+            onChange={(e) => sethandle(e.target.value.toLowerCase())}
             className="bg-white outline-none px-4 py-2 rounded-lg w-2/5 max-sm:w-3/5 h-10 text-lg font-poppins"
             placeholder="linkhive/"
           />
