@@ -44,7 +44,7 @@ function GenerateForm() {
 
     const raw = JSON.stringify({
       links: filteredLinks,
-      handle: handle,
+      handle: handle.toLowerCase(),
       name: name,
       profilepic: profilepic,
       desc: description,
