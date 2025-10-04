@@ -27,7 +27,7 @@ export default async function Page({ params }) {
     <div className="bg-gradient-to-br from-[#bf6aff] via-[#7d4dff] to-[#3f1dff] w-full flex flex-col justify-start items-center py-10 scrollbar-three h-screen overflow-y-scroll">
       {item && (
         <>
-          <div className="w-3/4 Profile-section flex flex-col items-center">
+          <div className="w-3/4 max-sm:w-full Profile-section flex flex-col items-center">
             <div className="w-40 h-40 rounded-full border-3 border-white overflow-hidden">
               <img
                 src={item.profilepic}
@@ -39,7 +39,7 @@ export default async function Page({ params }) {
               {item.name}
             </h1>
             <h1 className="text-lg font-poppins font-medium">@{item.handle}</h1>
-            <span className="w-3/4 mt-3 text-center text-sm font-poppins font-light">
+            <span className="w-3/4 max-sm:w-4/5 mt-3 text-center text-sm font-poppins font-light">
               {item.desc}
             </span>
             <div className="links flex flex-col gap-5 mt-10 w-full items-center">
@@ -49,7 +49,7 @@ export default async function Page({ params }) {
                     key={index}
                     href={item.link}
                     target="_blank"
-                    className="w-1/2 rounded-2xl py-3 text-black text-center font-poppins font-medium 
+                    className="w-1/2 max-sm:w-9/10 rounded-2xl py-3 text-black text-center font-poppins font-medium 
               bg-white/10 backdrop-blur-xl border border-white/30 shadow-lg 
                 hover:scale-102 hover:shadow-[0_0_10px_rgba(255,255,255,0.3)]
                 transition-all duration-400 ease-in-out"

@@ -69,25 +69,25 @@ const Page = () => {
 
   return (
     <div className="w-full flex flex-col">
-      <section className="w-full h-screen bg-[#e9c0e9] flex items-center justify-center pt-25">
-        <div className="w-1/2 flex flex-col items-start pr-5 pl-25">
-          <div className="slogan my-5 text-[#316a22] text-7xl font-black">
+      <section className="w-full sm:h-screen max-sm:min-h-screen bg-[#e9c0e9] flex max-sm:flex-col-reverse items-center justify-center pt-25 max-sm:pt-30">
+        <div className="w-1/2 max-sm:w-full flex flex-col items-start pr-5 pl-25 max-sm:px-5">
+          <div className="slogan my-5 text-[#316a22] text-7xl max-sm:text-4xl font-black">
             <span className="w-full">Everything you are.</span>
             <span className="w-full"> In one , simple link in bio.</span>
           </div>
-          <div className="para my-5 font-poppins text-lg font-medium">
+          <div className="para my-5 font-poppins text-lg max-sm:text-sm max-sm:my-2 font-medium">
             One link to help you share everything you create, curate and sell
             from your Instagram, Whatsapp, Twitter, YouTube and other social
             media profiles.
           </div>
-          <div className="w-full my-5 flex gap-8 items-center">
+          <div className="w-full my-5 flex max-sm:flex-col gap-8 items-center  ">
             <input
               onChange={(e) => setHandleTop(e.target.value)}
               name="handleTop"
               value={handleTop}
               type="text"
               spellCheck="false"
-              className="bg-white outline-none px-4 py-3 rounded-2xl w-2/5 h-16 text-xl font-poppins"
+              className="bg-white outline-none px-4 py-3 rounded-2xl w-2/5 max-sm:w-4/5 max-sm:h-13 h-16 text-xl font-poppins"
               placeholder="linkhive/"
             />
             <button
@@ -98,10 +98,10 @@ const Page = () => {
             </button>
           </div>
         </div>
-        <div className="home-video w-1/2 flex justify-center items-center">
+        <div className="home-video w-1/2 max-sm:w-full flex justify-center items-center">
           <video
             src="/demo-video.webm"
-            className="w-4/5"
+            className="w-4/5 max-sm:h-auto"
             alt="sample video of linkhive"
             autoPlay
             loop
@@ -110,12 +110,12 @@ const Page = () => {
           />
         </div>
       </section>
-      <section className="w-full h-screen bg-[#afff73] flex flex-row-reverse  items-center">
-        <div className="w-1/2 flex flex-col items-start px-15 mt-20">
-          <div className="slogan my-5 text-[#a124ff] text-6xl font-black">
+      <section className="w-full sm:h-screen max-sm:min-h-screen max-sm:flex-col bg-[#afff73] flex sm:flex-row-reverse  items-center">
+        <div className="w-1/2 max-sm:w-full max-sm:px-5 max-sm:mt-10 flex flex-col items-start px-15 mt-20">
+          <div className="slogan my-5 text-[#a124ff] text-6xl max-sm:text-4xl font-black">
             Create and customize your LinkHive in minutes
           </div>
-          <div className="para my-5 font-poppins text-lg font-medium">
+          <div className="para my-5 font-poppins text-lg font-medium max-sm:text-sm max-sm:my-2">
             Connect your Whatsapp, Instagram, Twitter, website, store, videos,
             music, podcast, events and more. It all comes together in a link in
             bio landing page designed to convert.
@@ -129,7 +129,7 @@ const Page = () => {
             </button>
           </div>
         </div>
-        <div className="home-photo w-1/2 flex justify-center items-center">
+        <div className="home-photo w-1/2 max-sm:w-full flex justify-center items-center">
           <img
             src="/sample.png"
             className="w-full h-auto"
@@ -137,12 +137,12 @@ const Page = () => {
           />
         </div>
       </section>
-      <section className="w-full h-screen bg-[#780016] flex items-center">
-        <div className="w-1/2 flex flex-col items-start px-15 mt-20">
-          <div className="slogan my-5 text-[#e9c0e9] text-6xl font-black">
+      <section className="w-full sm:h-screen max-sm:min-h-screen max-sm:flex-col-reverse sm:flex-row-reverse bg-[#780016] flex items-center">
+        <div className="w-1/2 flex flex-col items-start px-15 mt-20 max-sm:w-full max-sm:px-5 max-sm:mt-10">
+          <div className="slogan my-5 text-[#e9c0e9] text-6xl max-sm:text-4xl font-black">
             Share your LinkHive anywhere you like!
           </div>
-          <div className="para my-5 font-poppins text-lg font-medium text-white">
+          <div className="para my-5 font-poppins text-lg font-medium text-white max-sm:text-sm max-sm:my-2">
             Add your unique LinkHive URL to all the platforms and places you
             find your audience. Then use your QR code to drive your offline
             traffic online.
@@ -156,7 +156,7 @@ const Page = () => {
             </button>
           </div>
         </div>
-        <div className="home-photo w-1/2 flex justify-center items-center">
+        <div className="home-photo w-1/2 max-sm:w-full flex justify-center items-center max-sm:mt-5">
           <img
             src="/sample 3.png"
             className="w-3/5 h-auto"
@@ -164,12 +164,12 @@ const Page = () => {
           />
         </div>
       </section>
-      <section className="w-full h-screen bg-[#e8efd6] flex flex-row-reverse items-center">
-        <div className="w-1/2 flex flex-col items-start px-15 mt-20">
-          <div className="slogan my-5 text-[#1e2330] text-6xl font-black">
+      <section className="w-full sm:h-screen max-sm:min-h-screen max-sm:flex-col sm:flex-row-reverse bg-[#e8efd6] flex items-center">
+        <div className="w-1/2 flex flex-col items-start px-15 mt-20 max-sm:w-full max-sm:px-5 max-sm:mt-10">
+          <div className="slogan my-5 text-[#1e2330] text-6xl max-sm:text-4xl font-black">
             Analyze your audience and keep your followers engaged
           </div>
-          <div className="para my-5 font-poppins text-lg font-medium">
+          <div className="para my-5 font-poppins text-lg font-medium max-sm:text-sm">
             Track your engagement over time, monitor revenue and learn
             what&apos;s converting your audience. Make informed updates on the
             fly to keep them coming back.
@@ -177,13 +177,13 @@ const Page = () => {
           <div className="w-full my-5 flex gap-8 items-center">
             <button
               onClick={createHive}
-              className="font-poppins text-white font-bold px-8 py-5 bg-[#70774e] rounded-full cursor-pointer"
+              className="font-poppins text-white font-bold px-8 py-5 bg-[#502274] rounded-full cursor-pointer"
             >
               Get started for free
             </button>
           </div>
         </div>
-        <div className="home-photo w-1/2 flex justify-center items-center">
+        <div className="home-photo w-1/2 max-sm:w-full flex justify-center items-center">
           <img
             src="/sample2.png"
             className="w-3/4 h-auto"
@@ -192,19 +192,19 @@ const Page = () => {
         </div>
       </section>
       <section className="w-full min-h-screen bg-[#a14663] flex flex-col items-center justify-center py-20">
-        <div className="title text-[#780016] text-6xl font-black my-10">
+        <div className="title text-[#780016] text-6xl max-sm:text-[2rem] font-black my-10">
           Questions? Answered
         </div>
         {questions.map((item, index) => (
           <div
             key={index}
-            className="que-box bg-[#51000f] rounded-4xl w-3/4 mt-5 p-10 flex flex-col"
+            className="que-box bg-[#51000f] rounded-4xl w-3/4 mt-5 p-10 flex flex-col max-sm:p-5 max-sm:w-[95%]"
           >
             <div
-              className="que text-[#e9c0e9] text-3xl font-bold font-poppins flex justify-between items-center cursor-pointer"
+              className="que text-[#e9c0e9] text-3xl max-sm:text-lg font-bold font-poppins flex justify-between items-center cursor-pointer"
               onClick={() => toggle(index)}
             >
-              <span>{item.q}</span>
+              <span className="max-sm:w-4/5">{item.q}</span>
               <HugeiconsIcon
                 icon={
                   activeIndex === index
@@ -216,7 +216,7 @@ const Page = () => {
               />
             </div>
             <div
-              className={`ans text-[#e9c0e9] text-xl font-medium font-poppins transition-all duration-500 ease-in-out overflow-hidden ${
+              className={`ans text-[#e9c0e9] text-xl max-sm:text-sm font-medium font-poppins transition-all duration-500 ease-in-out overflow-hidden ${
                 activeIndex === index
                   ? "opacity-100 max-h-[500px]"
                   : "opacity-0 max-h-0"
@@ -227,18 +227,18 @@ const Page = () => {
           </div>
         ))}
       </section>
-      <section className="w-full min-h-screen bg-[#502274] flex flex-col justify-center items-center gap-5 relative z-2 py-20 pb-50">
-        <div className="slogan mt-25 text-[#02acc4] text-6xl font-black text-center relative z-10 px-60">
+      <section className="w-full min-h-screen bg-[#502274] flex flex-col justify-center items-center gap-5 relative z-2 py-20 pb-50 max-sm:pb-25">
+        <div className="slogan mt-25 text-[#e9c0e9] text-6xl max-sm:text-4xl font-black text-center relative z-10 px-60 max-sm:px-5">
           Jumpstart your corner of the internet today
         </div>
-        <div className="w-full my-5 flex gap-8 items-center justify-center relative z-10">
+        <div className="w-full my-5 flex gap-8 items-center justify-center relative z-10 max-sm:flex-col">
           <input
             onChange={(e) => setHandleBottom(e.target.value)}
             name="handleBottom"
             value={handleBottom}
             type="text"
             spellCheck="false"
-            className="bg-white outline-none px-4 py-3 rounded-2xl w-3/10 h-16 text-xl font-poppins"
+            className="bg-white outline-none px-4 py-3 rounded-2xl w-3/10 h-16 max-sm:w-4/5 max-sm:h-13 text-xl font-poppins"
             placeholder="linkhive/"
           />
           <button
@@ -251,7 +251,7 @@ const Page = () => {
         <img
           src="/person-svg.svg"
           alt="Decorative person illustration"
-          className="absolute top-10 left-0 w-1/4 transform rotate-[16deg] z-1"
+          className="absolute top-10 left-0 w-1/4 max-sm:w-4/5 transform rotate-[16deg] z-1"
         />
         <div className="footer-box w-[90%] bg-white rounded-3xl p-10 relative z-5 mt-30 mb-10 shadow-lg">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 text-gray-700">
@@ -372,8 +372,8 @@ const Page = () => {
               Get started for free
             </button>
           </div>
-          <div className="flex flex-wrap justify-between items-center mt-8 gap-6">
-            <div className="flex gap-4 items-center">
+          <div className="flex flex-wrap justify-between max-sm:justify-center items-center mt-8 gap-6">
+            <div className="flex gap-4 items-center max-sm:hidden">
               <HugeiconsIcon icon={AppStoreIcon} size={50} strokeWidth={1.5} />
               <span className="text-xl font-medium font-poppins mr-15">
                 Get it on Appstore
@@ -402,7 +402,7 @@ const Page = () => {
         <img
           src="/flower-svg.svg"
           alt="Decorative flower illustration"
-          className="absolute bottom-15 right-15 w-1/5 transform rotate-[20deg] z-1"
+          className="absolute bottom-15 max-sm:bottom-8 right-15 w-1/5 max-sm:w-3/5 transform rotate-[20deg] z-1"
         />
       </section>
     </div>

@@ -3,21 +3,31 @@
 import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { HugeiconsIcon } from "@hugeicons/react";
+import { MenuSquareIcon } from "@hugeicons/core-free-icons";
+
 
 const Navbar = () => {
   const pathname = usePathname();
   const otherPages = ["/", "/generate"].includes(pathname);
 
-  return ( <> {otherPages && ( <nav className="bg-white h-[10vh] w-[90%] rounded-full absolute top-10 left-1/2 -translate-x-1/2 flex justify-between items-center px-10 py-11">
+  return (
+    <>
+      {otherPages && (
+        <nav className="bg-white h-[10vh] w-[90%] rounded-full absolute top-10 left-1/2 -translate-x-1/2 flex justify-between items-center px-10 py-11 max-sm:py-8">
           <Link href={"/"}>
             <div className="brand-name flex gap-3 items-center">
-              <h1 className="poppins text-3xl font-medium cursor-pointer">
+              <h1 className="poppins text-3xl max-sm:text-2xl font-medium cursor-pointer">
                 LinkHive
               </h1>
-              <img src="/logo.png" alt="LinkHive Logo" className="w-15 h-15" />
+              <img
+                src="/logo.png"
+                alt="LinkHive Logo"
+                className="w-15 h-15 max-sm:w-10 max-sm:h-10"
+              />
             </div>
           </Link>
-          <div className="navlinks">
+          <div className="navlinks max-md:hidden">
             <ul className="poppins flex gap-5 justify-center items-center text-xl font-medium">
               <li className="hover:bg-[#ededed]  p-4 rounded-xl transition-all ease-in-out duration-500 hover:cursor-pointer">
                 About
@@ -34,12 +44,13 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="buttons flex items-center gap-5">
-            <button className="poppins bg-[#ededed] p-4 text-md font-medium rounded-xl">
+            <button className="poppins bg-[#ededed] p-4 text-md font-medium rounded-xl max-sm:hidden">
               Log in
             </button>
-            <button className="poppins text-white bg-[#1e2330] p-3 px-5 text-xl rounded-full ">
+            <button className="poppins text-white bg-[#1e2330] p-3 px-5 text-xl rounded-full max-sm:hidden">
               Sign in
             </button>
+            <HugeiconsIcon icon={MenuSquareIcon} size={28} className="sm:hidden"/>
           </div>
         </nav>
       )}

@@ -87,8 +87,8 @@ function GenerateForm() {
 
   return (
     <div className="bg-pink-300 w-full flex min-h-screen">
-      <div className="w-1/2 flex flex-col items-start pl-25 mt-45 mb-30">
-        <div className="slogan mb-6 text-slate-700 text-6xl font-[800] font-zain">
+      <div className="w-1/2 flex flex-col items-start pl-25 mt-45 mb-30 max-sm:w-full max-sm:px-4">
+        <div className="slogan mb-6 text-slate-700 text-6xl max-sm:text-center max-sm:mb-10 font-[800] font-zain">
           <span className="w-full">Generate your LinkHive</span>
         </div>
         <div className="font-poppins text-xl font-medium">
@@ -99,7 +99,7 @@ function GenerateForm() {
             type="text"
             value={handle || ""}
             onChange={(e) => sethandle(e.target.value)}
-            className="bg-white outline-none px-4 py-2 rounded-lg w-2/5 h-10 text-lg font-poppins"
+            className="bg-white outline-none px-4 py-2 rounded-lg w-2/5 max-sm:w-3/5 h-10 text-lg font-poppins"
             placeholder="linkhive/"
           />
         </div>
@@ -112,7 +112,7 @@ function GenerateForm() {
             type="text"
             value={name || ""}
             onChange={(e) => setname(e.target.value)}
-            className="bg-white outline-none px-4 py-2 rounded-lg w-3/5 h-10 text-lg font-poppins"
+            className="bg-white outline-none px-4 py-2 rounded-lg w-3/5 max-sm:w-4/5 h-10 text-lg font-poppins"
             placeholder="Enter your profile name"
           />
         </div>
@@ -124,7 +124,7 @@ function GenerateForm() {
             type="text"
             value={profilepic || ""}
             onChange={(e) => setprofilepic(e.target.value)}
-            className="bg-white outline-none px-4 py-2 rounded-lg w-3/5 h-10 text-lg font-poppins"
+            className="bg-white outline-none px-4 py-2 rounded-lg w-3/5 max-sm:w-4/5 h-10 text-lg font-poppins"
             placeholder="Enter profile photo link"
           />
         </div>
@@ -135,7 +135,7 @@ function GenerateForm() {
           <textarea
             value={description || ""}
             onChange={(e) => setdescription(e.target.value)}
-            className="bg-white outline-none px-4 py-2 rounded-lg w-3/5 min-h-20 text-lg font-poppins resize-y"
+            className="bg-white outline-none px-4 py-2 rounded-lg w-3/5 max-sm:w-full min-h-20 text-lg font-poppins resize-y"
             placeholder="Enter profile description"
           />
         </div>
@@ -145,14 +145,14 @@ function GenerateForm() {
         {links &&
           links.map((item, index) => {
             return (
-              <div key={index} className="w-full my-5 flex gap-8 items-center">
+              <div key={index} className="w-full my-5 flex gap-8 max-sm:gap-3 items-center">
                 <input
                   type="text"
                   value={item.linktext || ""}
                   onChange={(e) =>
                     handleChange(index, item.link, e.target.value)
                   }
-                  className="bg-white outline-none px-4 py-2 rounded-lg w-2/5 h-10 text-lg font-poppins"
+                  className="bg-white outline-none px-4 py-2 rounded-lg w-2/5 max-sm:w-1/2 h-10 text-lg font-poppins"
                   placeholder="Enter Link Text"
                 />
                 <input
@@ -161,7 +161,7 @@ function GenerateForm() {
                   onChange={(e) =>
                     handleChange(index, e.target.value, item.linktext)
                   }
-                  className="bg-white outline-none px-4 py-2 rounded-lg w-2/5 h-10 text-lg font-poppins"
+                  className="bg-white outline-none px-4 py-2 rounded-lg w-2/5 max-sm:w-1/2 h-10 text-lg font-poppins"
                   placeholder="Enter Link"
                 />
               </div>
@@ -188,7 +188,7 @@ function GenerateForm() {
               onChange={(e) =>
                 setSocial([{ ...social[0], yt: e.target.value }])
               }
-              className="bg-white outline-none px-4 py-2 rounded-lg w-3/5 h-10 text-lg font-poppins"
+              className="bg-white outline-none px-4 py-2 rounded-lg w-3/5 max-sm:w-full h-10 text-lg font-poppins"
               placeholder="YouTube link"
             />
           </div>
@@ -199,7 +199,7 @@ function GenerateForm() {
               onChange={(e) =>
                 setSocial([{ ...social[0], insta: e.target.value }])
               }
-              className="bg-white outline-none px-4 py-2 rounded-lg w-3/5 h-10 text-lg font-poppins"
+              className="bg-white outline-none px-4 py-2 rounded-lg w-3/5 max-sm:w-full h-10 text-lg font-poppins"
               placeholder="Instagram link"
             />
           </div>
@@ -210,7 +210,7 @@ function GenerateForm() {
               onChange={(e) =>
                 setSocial([{ ...social[0], github: e.target.value }])
               }
-              className="bg-white outline-none px-4 py-2 rounded-lg w-3/5 h-10 text-lg font-poppins"
+              className="bg-white outline-none px-4 py-2 rounded-lg w-3/5 max-sm:w-full h-10 text-lg font-poppins"
               placeholder="GitHub link"
             />
           </div>
@@ -221,7 +221,7 @@ function GenerateForm() {
               onChange={(e) =>
                 setSocial([{ ...social[0], linkedin: e.target.value }])
               }
-              className="bg-white outline-none px-4 py-2 rounded-lg w-3/5 h-10 text-lg font-poppins"
+              className="bg-white outline-none px-4 py-2 rounded-lg w-3/5 max-sm:w-full h-10 text-lg font-poppins"
               placeholder="LinkedIn link"
             />
           </div>
@@ -232,7 +232,7 @@ function GenerateForm() {
               onChange={(e) =>
                 setSocial([{ ...social[0], twitter: e.target.value }])
               }
-              className="bg-white outline-none px-4 py-2 rounded-lg w-3/5 h-10 text-lg font-poppins"
+              className="bg-white outline-none px-4 py-2 rounded-lg w-3/5 max-sm:w-full h-10 text-lg font-poppins"
               placeholder="Twitter link"
             />
           </div>
@@ -245,12 +245,12 @@ function GenerateForm() {
           onClick={() => {
             createHive();
           }}
-          className="disabled:bg-neutral-700 font-poppins text-white font-bold px-7 py-3 bg-[#316a] rounded-full cursor-pointer outline-none"
+          className="disabled:bg-neutral-700 font-poppins text-white font-bold px-7 py-3 bg-[#316a] rounded-full cursor-pointer outline-none mt-5"
         >
           Create your Hive
         </button>
       </div>
-      <div className="home-video w-1/2 flex flex-col items-center mt-35">
+      <div className="home-video w-1/2 flex flex-col items-center mt-35 max-sm:hidden">
         <video
           src="/demo-video.webm"
           className="w-full"
