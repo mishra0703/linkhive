@@ -1,26 +1,67 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.font-poppins {
+  font-family: var(--font-poppins), sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.font-zain {
+  font-family: var(--font-zain), sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ===================== Scrollbar 1 ===================== */
+/* .scrollbar-one::-webkit-scrollbar {
+  width: 7px;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.scrollbar-one::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.scrollbar-one::-webkit-scrollbar-thumb {
+  background: #c82fc8;
+}
+
+.scrollbar-one::-webkit-scrollbar-thumb:hover {
+  background: #c82fc8bb;
+} */
+
+/* ===================== Scrollbar 2 ===================== */
+.scrollbar-one::-webkit-scrollbar {
+  width: 7px;
+}
+
+.scrollbar-one::-webkit-scrollbar-track {
+  background: var(--color-pink-300);
+}
+
+.scrollbar-one::-webkit-scrollbar-thumb {
+  background: var(--color-pink-500);
+  border-radius: 5px;
+}
+
+.scrollbar-one::-webkit-scrollbar-thumb:hover {
+  background: var(--color-pink-600);
+}
+
+
+/* ===================== Scrollbar 3 ===================== */
+
+
+
+.scrollbar-three::-webkit-scrollbar {
+  width: 7px;
+}
+
+.scrollbar-three::-webkit-scrollbar-track {
+  background: linear-gradient(180deg, #bf6aff, #7d4dff ,#4a00e0);
+}
+
+.scrollbar-three::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(6px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.scrollbar-three::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.6);
 }
