@@ -93,7 +93,7 @@ export default async function Page({ params }) {
 
             {item.social.github && (
               <Link
-                href={"/"} 
+                href={item.social.github}
                 target="_blank"
                 className="bg-white/20 backdrop-blur-xl border border-white/30 shadow-lg p-2 rounded-full hover:scale-115 transition-all ease-in-out duration-300"
               >
@@ -102,7 +102,7 @@ export default async function Page({ params }) {
             )}
             {item.social.twitter && (
               <Link
-                href={"/"}
+                href={item.social.twitter}
                 target="_blank"
                 className="bg-white/20 backdrop-blur-xl border border-white/30 shadow-lg p-2 rounded-full hover:scale-115 transition-all ease-in-out duration-300"
               >
