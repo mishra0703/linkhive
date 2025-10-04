@@ -48,7 +48,7 @@ function GenerateForm() {
       name: name,
       profilepic: profilepic,
       desc: description,
-      social: social,
+      social: social[0],
     });
 
     const requestOptions = {
